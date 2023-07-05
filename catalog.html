@@ -79,19 +79,38 @@
           <section class="hotels-list">
             <section class="appearance">
               <h2 class="hotels-list-title">Найдено гостиниц: <span>38</span></h2>
-              <table class="sorting">
-              <input id="cheap" name="sort" checked>
-              <label for="cheap">Сначала дешевые</label>
+              <select class="select-control" aria-label="Сортировка"
+              <option class="popular">Сначала популярные</option>
+              <option class="cheap" selected>Сначала дешевые</option>
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" fill="none" visually-hidden="Стрелка вниз" aria-hidden="true"><path fill="#000" d="m6.67 7.71 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5 4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"/></svg>
-              </table>
-              <div class="view-buttons">
-                <span class="active icon icon-tile"></span>
-                <! -- псевдоэлемент с картинкой -->
-                <span class="icon icon-slideshow"></span>
-                <! -- псевдоэлемент с картинкой -->
-	              <span class="icon icon-list"></span>
-                <! -- псевдоэлемент с картинкой -->
-              </div>
+              </select>
+
+              <section class="view-buttons">
+                <h2 class="visually-hidden">Кнопки вида отображения</h2>
+                 <ul class="view-buttons-list">
+                  <li class="view-buttons-list-item">
+                    <button type="button">
+                      <span class="active-button button-tile"></span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><g fill="#000" clip-path="url(#a)" visually-hidden="Плитка" aria-hidden="true"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+                    </button>
+                  </li>
+                 </ul>
+                 <ul class="view-buttons-list">
+                  <li class="view-buttons-list-item">
+                    <button type="button">
+                      <span class="inactive-button button-slideshow"></span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" visually-hidden="Слайдшоу" aria-hidden="true"><path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
+                    </button>
+                  </li>
+                 </ul>
+                 <ul class="view-buttons-list">
+                  <li class="view-buttons-list-item">
+                    <button type="button">
+                      <span class="inactive-button button-list"></span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" visually-hidden="Список" aria-hidden="true"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>                    </button>
+                  </li>
+                 </ul>
+                 </section>
             </section>
             <section class="cards">
                 <a href="#">
@@ -103,7 +122,6 @@
                 <a href="#">Подробнее</a>
                 <button type="button">в избранное</button>
                 <p class="star star-4">
-                  <! -- псевдоэлемент с картинкой -->
                   <span class="visually-hidden">4 звезды</span>
                 </p>
                 <span>Рейтинг:8,5</span>
@@ -118,7 +136,6 @@
               <a href="#">Подробнее</a>
               <button type="button">в избранном</button>
               <p class="star star-4">
-                <! -- псевдоэлемент с картинкой -->
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <span>Рейтинг:9,2</span>
@@ -133,10 +150,9 @@
               <a href="#">Подробнее</a>
               <button type="button">в Избранное</button>
               <p class="star star-3">
-                <! -- псевдоэлемент с картинкой -->
                 <span class="visually-hidden">3 звезды</span>
               </p>
-              <span>Рейтинг:6,9</span>
+                <span>Рейтинг:6,9</span>
             </section>
             <section class="cards">
               <a href="#">
@@ -148,7 +164,6 @@
               <a href="#">Подробнее</a>
               <button type="button">в Избранное</button>
               <p class="star star-2">
-                <! -- псевдоэлемент с картинкой -->
                 <span class="visually-hidden">2 звезды</span>
               </p>
               <span>Рейтинг:5,0</span>
